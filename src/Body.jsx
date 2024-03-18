@@ -32,7 +32,7 @@ function Body() {
         </h1>
         <div className="h-[349px] w-[349px] rounded-full overflow-hidden bg-blue-600 bg-gradient-circle">
           <img
-            src="/images/img.jpg"
+            src="images/img.jpg"
             className="w-[100%] h-[100%] rounded-full object-cover p-2"
             alt=""
           />
