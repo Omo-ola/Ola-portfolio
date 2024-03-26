@@ -382,10 +382,18 @@ function Body() {
                 Tech stack : React, Tailwind
               </p>
               <div className="flex justify-center gap-[48px] items-center mb-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://frontend-mentor-task-country.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Live preview
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/Omo-ola/frontend-mentor-task-country"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View Code
                 </a>
               </div>
@@ -411,10 +419,18 @@ function Body() {
                 Tech stack : HTML ,CSS
               </p>
               <div className="flex justify-center gap-[48px] items-center mb-2">
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://edu-kate.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Live preview
                 </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/Omo-ola/EduKate"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   View Code
                 </a>
               </div>
