@@ -303,7 +303,7 @@ function Body() {
                 still be there.
               </p>
               <p className="text-[#666666] text-sm mb-[21px]">
-                Tech stack : HTML , JavaScript, Css
+                Tech stack : HTML, CSS , JavaScript
               </p>
               <div className="flex justify-center gap-[48px] items-center mb-2">
                 <a
@@ -336,9 +336,9 @@ function Body() {
                 Pig Game
               </h2>
               <p className="text-base mb-[12px]">
-                This is sample project description random things are here in
-                description This is sample project lorem ipsum generator for
-                dummy content
+                The project design come from Jonas.io javascript course, I
+                implement the functionality of the project.It involve 2 users
+                ,where each user can roll a dice and add score to user scores.
               </p>
               <p className="text-[#666666] text-sm mb-[21px]">
                 Tech stack : HTML,CSS , JavaScript
@@ -364,22 +364,22 @@ function Body() {
           <article className="items-center bg-white shadow-xl rounded-b-lg">
             <div className="h-[240px] pb-[17px]">
               <img
-                src="/images/Portfolio.PNG"
+                src="/images/mentor-1.JPG"
                 alt="Image of website"
                 className="w-full h-full rounded-t-lg object-cover"
               />
             </div>
             <div className="px-[18px] bg-white rounded-b-lg">
               <h2 className="text-xl text-[#000000] font-bold mb-[17px]">
-                Project Tile goes here
+                Rest Country API
               </h2>
               <p className="text-base mb-[12px]">
-                This is sample project description random things are here in
-                description This is sample project lorem ipsum generator for
-                dummy content
+                A challenge from frontend mentor, I used a fetched data to
+                display list of countries and some details about the country
+                when a user click to check out a particular country
               </p>
               <p className="text-[#666666] text-sm mb-[21px]">
-                Tech stack : HTML , JavaScript, SASS, React
+                Tech stack : React, Tailwind
               </p>
               <div className="flex justify-center gap-[48px] items-center mb-2">
                 <a href="#" target="_blank" rel="noopener noreferrer">
@@ -401,15 +401,14 @@ function Body() {
             </div>
             <div className="px-[18px] bg-white rounded-b-lg">
               <h2 className="text-xl text-[#000000] font-bold mb-[17px]">
-                Project Tile goes here
+                EduKate
               </h2>
               <p className="text-base mb-[12px]">
-                This is sample project description random things are here in
-                description This is sample project lorem ipsum generator for
-                dummy content
+                A responsive static page that can be used for Educational
+                purposes
               </p>
               <p className="text-[#666666] text-sm mb-[21px]">
-                Tech stack : HTML , JavaScript, SASS, React
+                Tech stack : HTML ,CSS
               </p>
               <div className="flex justify-center gap-[48px] items-center mb-2">
                 <a href="#" target="_blank" rel="noopener noreferrer">
