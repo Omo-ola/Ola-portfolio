@@ -19,7 +19,7 @@ function Body() {
   }
 
   return (
-    <section>
+    <section id="home">
       <div className="pt-8 flex  justify-center gap-8 md:justify-between items-center flex-wrap px-4">
         <h1 className="text-5xl font-extrabold left-14">
           Hi👋,
@@ -32,7 +32,7 @@ function Body() {
         </h1>
         <div className="h-[349px] w-[349px] rounded-full overflow-hidden bg-blue-600 bg-gradient-circle">
           <img
-            src="images/img.jpg"
+            src="images/img.png"
             className="w-[100%] h-[100%] rounded-full object-cover p-2"
             alt=""
           />
@@ -40,7 +40,7 @@ function Body() {
       </div>
 
       {/* Tech stack */}
-      <div className="mt-20">
+      <div className="mt-20" id="tech">
         <h1 className="text-center text-[30px] font-bold mb-4">
           My Tech Stack
         </h1>
@@ -200,7 +200,7 @@ function Body() {
 
       {/* Project section */}
 
-      <div className="mt-[106px] px-4">
+      <div className="mt-[106px] mb-[100px] px-4" id="project">
         <h1 className="text-5xl font-bold text-center my-4 text-[#42446E]">
           Projects
         </h1>
@@ -229,17 +229,19 @@ function Body() {
               <p className="text-[#666666] text-sm mb-[21px]">
                 Tech stack : React, Tailwind, TypeScript, Node, Express, MongoDb
               </p>
-              <div className="flex justify-center gap-[48px] items-center mb-2">
+              <div className="flex justify-center gap-x-[48px] items-center mb-2">
                 <a
                   href="https://omoola-invoice.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="hover:text-blue-500"
                 >
                   Live preview
                 </a>
                 <a
                   href="https://github.com/Omo-ola/Invoice-Project"
                   target="_blank"
+                  className="hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
                   View Code
@@ -271,6 +273,7 @@ function Body() {
                 <a
                   href="https://omoola-movie-search.netlify.app/"
                   target="_blank"
+                  className="hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
                   Live preview
@@ -278,6 +281,7 @@ function Body() {
                 <a
                   href="https://github.com/Omo-ola/React-movie-search"
                   target="_blank"
+                  className="hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
                   View Code
@@ -298,17 +302,18 @@ function Body() {
                 A Todo list
               </h2>
               <p className="text-base mb-[12px]">
-                A project that work as a simple to do App, with a functional
-                Local storage,if user add a list to it and reload the list will
-                still be there.
+                A project that work as a simple to do App,This project combines
+                simplicity with functionality, offering a seamless user
+                experience enhanced by robust local storage capabilities
               </p>
               <p className="text-[#666666] text-sm mb-[21px]">
                 Tech stack : HTML, CSS , JavaScript
               </p>
-              <div className="flex justify-center gap-[48px] items-center mb-2">
+              <div className="flex justify-center gap-x-[48px] items-center mb-2">
                 <a
                   href="https://to-dolist-psi.vercel.app/"
                   target="_blank"
+                  className="hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
                   Live preview
@@ -316,6 +321,7 @@ function Body() {
                 <a
                   href="https://github.com/Omo-ola/To-dolist"
                   target="_blank"
+                  className="hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
                   View Code
@@ -343,10 +349,11 @@ function Body() {
               <p className="text-[#666666] text-sm mb-[21px]">
                 Tech stack : HTML,CSS , JavaScript
               </p>
-              <div className="flex justify-center gap-[48px] items-center mb-2">
+              <div className="flex justify-center gap-x-[48px] items-center mb-2">
                 <a
                   href="https://pig-game-one-beta.vercel.app/"
                   target="_blank"
+                  className="hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
                   Live preview
@@ -354,6 +361,7 @@ function Body() {
                 <a
                   href="https://github.com/Omo-ola/Pig-Game"
                   target="_blank"
+                  className="hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
                   View Code
@@ -374,17 +382,19 @@ function Body() {
                 Rest Country API
               </h2>
               <p className="text-base mb-[12px]">
-                A challenge from frontend mentor, I used a fetched data to
-                display list of countries and some details about the country
-                when a user click to check out a particular country
+                Embark on the challenge with my innovative solution for Frontend
+                Mentor! I`&apos;ve crafted a web app that meets the requirements
+                and expectations by fetching data to provide users with a
+                comprehensive experience
               </p>
               <p className="text-[#666666] text-sm mb-[21px]">
                 Tech stack : React, Tailwind
               </p>
-              <div className="flex justify-center gap-[48px] items-center mb-2">
+              <div className="flex justify-center gap-x-[48px] items-center mb-2">
                 <a
                   href="https://frontend-mentor-task-country.vercel.app/"
                   target="_blank"
+                  className="hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
                   Live preview
@@ -392,6 +402,7 @@ function Body() {
                 <a
                   href="https://github.com/Omo-ola/frontend-mentor-task-country"
                   target="_blank"
+                  className="hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
                   View Code
@@ -407,21 +418,23 @@ function Body() {
                 className="w-full h-full rounded-t-lg object-cover"
               />
             </div>
-            <div className="px-[18px] bg-white rounded-b-lg">
+            <div className="px-[18px] bg-white rounded-b-lg flex flex-col justify-between">
               <h2 className="text-xl text-[#000000] font-bold mb-[17px]">
                 EduKate
               </h2>
               <p className="text-base mb-[12px]">
                 A responsive static page that can be used for Educational
-                purposes
+                purposes, the static website boasts a clean and modern design,
+                meticulously crafted to provide an optimal user experience.
               </p>
               <p className="text-[#666666] text-sm mb-[21px]">
                 Tech stack : HTML ,CSS
               </p>
-              <div className="flex justify-center gap-[48px] items-center mb-2">
+              <div className="flex justify-center gap-x-[48px] items-center mb-2">
                 <a
                   href="https://edu-kate.vercel.app/"
                   target="_blank"
+                  className="hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
                   Live preview
@@ -429,6 +442,7 @@ function Body() {
                 <a
                   href="https://github.com/Omo-ola/EduKate"
                   target="_blank"
+                  className="hover:text-blue-500"
                   rel="noopener noreferrer"
                 >
                   View Code
@@ -442,7 +456,7 @@ function Body() {
       {/* footer section */}
 
       <footer className="footer section-hidden px-4">
-        <section className="border-b-2 pb-8 px-4 md:px-0">
+        <section className="border-b-2 pb-8 px-4 md:px-0" id="contact">
           <div className="flex-none md:flex flex-wrap justify-between gap-4">
             <div className="content basis-[30%] flex flex-col justify-center mb-2 md:mb-0">
               <h1 className="text-4xl capitalize mb-4">contact</h1>

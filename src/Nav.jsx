@@ -9,9 +9,13 @@ function Nav() {
   function handleClose() {
     list.current.classList.add(`translate-x-[50rem]`);
   }
+  function scroll(id) {
+    const section = document.getElementById(id);
+    section.scrollIntoView({ behavior: "smooth" });
+  }
 
   return (
-    <header className="flex items-center justify-between px-6 md:px-4 py-4">
+    <header className="flex items-center justify-between px-6 md:px-4 py-4 bg-white">
       <div className="flex items-center justify-between gap-4">
         <div className="w-32 text-3xl font-semibold bg-gradient-to-r from-blue-500 to-red-300 bg-clip-text text-transparent">
           Omoola.
@@ -22,29 +26,38 @@ function Nav() {
         className="fixed w-[60%] shadow-lg md:shadow-none top-0 right-0 z-20 px-8 h-screen md:flex justify-between items-center gap-8 transition-all duration-100 translate-x-[50rem] md:translate-x-0 bg-slate-600 md:bg-transparent"
         ref={list}
       >
-        <ul className="mt-20 md:mt-0 md:flex items-center justify-between gap-3 text-sm font-semibold">
-          <li className="p-1 my-2 md:p-0 md:my-0">
+        <ul className="mt-20 md:mt-0 md:flex items-center justify-between gap-3 text-sm font-semibold ">
+          <li
+            className="p-1 my-2 md:p-0 md:my-0 cursor-pointer hover:text-blue-500"
+            onClick={() => scroll("home")}
+          >
             <a href="#">Home</a>
           </li>
-          <li className="p-1 my-2 md:p-0 md:my-0">
-            <a href="#">About</a>
-          </li>
-          <li className="p-1 my-2 md:p-0 md:my-0">
+          <li
+            className="p-1 my-2 md:p-0 md:my-0 cursor-pointer hover:text-blue-500"
+            onClick={() => scroll("tech")}
+          >
             <a href="#">Tech Stack</a>
           </li>
-          <li className="p-1 my-2 md:p-0 md:my-0">
+          <li
+            className="p-1 my-2 md:p-0 md:my-0 cursor-pointer hover:text-blue-500"
+            onClick={() => scroll("project")}
+          >
             <a to="#">Project</a>
           </li>
-          <li className="p-1 my-2 md:p-0 md:my-0">
+          <li
+            className="p-1 my-2 md:p-0 md:my-0 cursor-pointer hover:text-blue-500"
+            onClick={() => scroll("contact")}
+          >
             <a href="#">Contact</a>
           </li>
         </ul>
-        <div className="flex md:justify-between items-center text-sm :gap-3">
+        <div className="flex md:justify-between items-center text-sm :gap-3 ">
           <a
             href="https://github.com/Omo-ola"
             target="_blank"
             rel="noopener noreferrer"
-            className="block md:inline-block p-2 h-8 rounded-md"
+            className="block md:inline-block p-2 h-8 rounded-md "
           >
             <svg
               xmlns="https://www.w3.org/2000/svg"
