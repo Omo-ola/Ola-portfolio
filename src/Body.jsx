@@ -4,9 +4,15 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 import { FaGitAlt, FaHtml5, FaNodeJs } from "react-icons/fa";
-import { IoLogoCss3, IoLogoJavascript, IoLogoReact } from "react-icons/io5";
+import {
+  IoCodeSlashOutline,
+  IoLogoCss3,
+  IoLogoJavascript,
+  IoLogoReact,
+} from "react-icons/io5";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { CiLink } from "react-icons/ci";
 
 function Body() {
   const [name, setName] = useState("");
@@ -32,7 +38,7 @@ function Body() {
         </h1>
         <div className="h-[349px] w-[349px] rounded-full overflow-hidden bg-blue-600 bg-gradient-circle">
           <img
-            src="images/img.png"
+            src="images/Imgs.jpg"
             className="w-[100%] h-[100%] rounded-full object-cover p-2"
             alt=""
           />
@@ -234,17 +240,17 @@ function Body() {
                   href="https://omoola-invoice.vercel.app/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                 >
-                  Live preview
+                  <CiLink />
                 </a>
                 <a
                   href="https://github.com/Omo-ola/Invoice-Project"
                   target="_blank"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                   rel="noopener noreferrer"
                 >
-                  View Code
+                  <IoCodeSlashOutline />
                 </a>
               </div>
             </div>
@@ -273,18 +279,18 @@ function Body() {
                 <a
                   href="https://omoola-movie-search.netlify.app/"
                   target="_blank"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                   rel="noopener noreferrer"
                 >
-                  Live preview
+                  <CiLink />
                 </a>
                 <a
                   href="https://github.com/Omo-ola/React-movie-search"
                   target="_blank"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                   rel="noopener noreferrer"
                 >
-                  View Code
+                  <IoCodeSlashOutline />
                 </a>
               </div>
             </div>
@@ -313,18 +319,18 @@ function Body() {
                 <a
                   href="https://to-dolist-psi.vercel.app/"
                   target="_blank"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                   rel="noopener noreferrer"
                 >
-                  Live preview
+                  <CiLink />
                 </a>
                 <a
                   href="https://github.com/Omo-ola/To-dolist"
                   target="_blank"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                   rel="noopener noreferrer"
                 >
-                  View Code
+                  <IoCodeSlashOutline />
                 </a>
               </div>
             </div>
@@ -353,18 +359,18 @@ function Body() {
                 <a
                   href="https://pig-game-one-beta.vercel.app/"
                   target="_blank"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                   rel="noopener noreferrer"
                 >
-                  Live preview
+                  <CiLink />
                 </a>
                 <a
                   href="https://github.com/Omo-ola/Pig-Game"
                   target="_blank"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                   rel="noopener noreferrer"
                 >
-                  View Code
+                  <IoCodeSlashOutline />
                 </a>
               </div>
             </div>
@@ -394,18 +400,18 @@ function Body() {
                 <a
                   href="https://frontend-mentor-task-country.vercel.app/"
                   target="_blank"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                   rel="noopener noreferrer"
                 >
-                  Live preview
+                  <CiLink />
                 </a>
                 <a
                   href="https://github.com/Omo-ola/frontend-mentor-task-country"
                   target="_blank"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                   rel="noopener noreferrer"
                 >
-                  View Code
+                  <IoCodeSlashOutline />
                 </a>
               </div>
             </div>
@@ -434,18 +440,18 @@ function Body() {
                 <a
                   href="https://edu-kate.vercel.app/"
                   target="_blank"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                   rel="noopener noreferrer"
                 >
-                  Live preview
+                  <CiLink />
                 </a>
                 <a
                   href="https://github.com/Omo-ola/EduKate"
                   target="_blank"
-                  className="hover:text-blue-500"
+                  className="hover:text-blue-500 font-bold text-2xl"
                   rel="noopener noreferrer"
                 >
-                  View Code
+                  <IoCodeSlashOutline />
                 </a>
               </div>
             </div>
@@ -456,10 +462,10 @@ function Body() {
       {/* footer section */}
 
       <footer className="footer section-hidden px-4">
-        <section className="border-b-2 pb-8 px-4 md:px-0" id="contact">
+        <section className="border-b-2 pb-10 px-4 md:px-0" id="contact">
           <div className="flex-none md:flex flex-wrap justify-between gap-4">
             <div className="content basis-[30%] flex flex-col justify-center mb-2 md:mb-0">
-              <h1 className="text-4xl capitalize mb-4">contact</h1>
+              <h1 className="text-5xl font-bold capitalize mb-4">contact</h1>
               <p className="text-xl">
                 I would love to hear about your project and how I could
                 help.Please fill in the form, and I will get back to you as soon
@@ -495,7 +501,7 @@ function Body() {
                   onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
                 <button
-                  className="bg-blue-700 hover:bg-blue-800 py-2 px-4 text-white text-lg rounded-md block m-auto"
+                  className="bg-blue-700 w-[100%] hover:bg-blue-800 py-2 px-4 text-white text-lg rounded-md block m-auto"
                   type="submit"
                 >
                   Submit
@@ -505,7 +511,7 @@ function Body() {
           </div>
         </section>
 
-        <section className="flex justify-between mt-4 mb-8 ">
+        <section className="flex justify-between mt-6 mb-8 ">
           <div className="flex justify-center items-center">
             <a href="https://www.facebook.com/abdulrahmonolasunkanmi.olayiwola/"></a>
             <a href="https://www.linkedin.com/in/olayiwola-abdulramon-37609921a/"></a>
