@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import emailjs from "@emailjs/browser";
 
 import { FaGitAlt, FaHtml5, FaNodeJs } from "react-icons/fa";
 import {
@@ -15,13 +16,43 @@ import { SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { CiLink } from "react-icons/ci";
 
 function Body() {
+  const formRef = useRef();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState({ type: "", message: "" });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(name, email, message);
+    setIsSubmitting(true);
+    setStatus({ type: "", message: "" });
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setStatus({ type: "success", message: "Message sent successfully!" });
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          setStatus({
+            type: "error",
+            message: "Failed to send message. Please try again.",
+          });
+          console.error("EmailJS Error:", error);
+        }
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   }
 
   return (
@@ -473,22 +504,24 @@ function Body() {
               </p>
             </div>
             <div className="form-container basis-[60%]">
-              <form onSubmit={handleSubmit}>
+              <form ref={formRef} onSubmit={handleSubmit}>
                 <input
                   type="text"
+                  name="user_name"
                   placeholder="Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="border-b-2"
+                  required
                 />
                 <input
                   type="email"
-                  name=""
-                  id=""
+                  name="user_email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Email"
                   className="border-b-2"
+                  required
                 />
                 <textarea
                   name="message"
@@ -499,9 +532,29 @@ function Body() {
                   className="border-b-2"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
+                  required
                 ></textarea>
+                {status.message && (
+                  <p
+                    className={`text-sm mb-2 ${
+                      status.type === "success"
+                        ? "text-green-600"
+                        : "text-red-600"
+                    }`}
+                  >
+                    {status.message}
+                  </p>
+                )}
                 <button
-                  className="bg-blue-700 w-[100%] hover:bg-blue-800 py-2 px-4 text-white text-lg rounded-md block m-auto"
+                  type="submit"
+                  disabled={isSubmitting}
+                  className={`w-full py-2 px-4 text-white rounded transition-colors ${
+                    isSubmitting
+                      ? "bg-gray-400 cursor-not-allowed"
+                      : "bg-blue-700 hover:bg-blue-800"
+                  }`}
+                >
+                  {isSubmitting ? "Sending..." : "Send Message"}xt-white text-lg rounded-md block m-auto"
                   type="submit"
                 >
                   Submit
