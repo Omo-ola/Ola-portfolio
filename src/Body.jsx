@@ -548,16 +548,13 @@ function Body() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full py-2 px-4 text-white rounded transition-colors ${
+                  className={`w-full py-2 px-4 text-white text-lg rounded-md transition-colors ${
                     isSubmitting
                       ? "bg-gray-400 cursor-not-allowed"
                       : "bg-blue-700 hover:bg-blue-800"
                   }`}
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}xt-white text-lg rounded-md block m-auto"
-                  type="submit"
-                >
-                  Submit
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>
